@@ -1,0 +1,38 @@
+<div class="wrapper">
+    <div class="logo">
+        <img src="./assets/logo-reverse.png">
+    </div>
+    <div class="title">Welcome</div>
+    <div class="sub-title">This is your company app, please login or register to continue.</div>
+    <div class="bottom-container">
+        <button routerLink="/login" class="btn btn-primary">Login</button>
+        <button routerLink="/register" class="btn btn-secondary">Register</button>
+        <p>New mobile number? <strong><a href="">Update</a></strong></p>
+        <span class="btn-group" dropdown [dropup]="isDropup">
+            <button id="button-dropup" dropdownToggle type="button" class="btn dropdown-toggle"
+                aria-controls="dropdown-dropup">
+                <img src="./assets/translate_white.png"/> English <span class="caret"></span>
+            </button>
+            <ul id="dropdown-dropup" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-dropup">
+                <li role="menuitem"><a class="dropdown-item" href="#">Espanol</a></li>
+            </ul>
+        </span>
+        <!-- <div class="btn-group" dropdown>
+            <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                Button dropdown <span class="caret"></span>
+            </button>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+                <li role="menuitem"><a class="dropdown-item" href="#">English</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Espanol</a></li>
+            </ul>
+        </div> -->
+        <!-- <div class="dropdown" dropdown>
+            <a dropdownToggle class="pull-right text-center btn btn-setting dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria- expanded="true"></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#" data-toggle="modal"
+                        data-target="#myModal">Settings</a></li>
+            </ul>
+        </div> -->
+    </div>
+</div>

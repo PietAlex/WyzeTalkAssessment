@@ -1,0 +1,166 @@
+.wrapper {
+    display: flex;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 20px;
+    right: 3px;
+    flex-direction: column;
+    padding: 40px;
+    max-width: 375px;
+    height: 810px;
+    margin: 0 auto;
+    border-radius: 25px;
+    z-index: 1000;
+    .back {
+        display: block;
+        width: 30px;
+    }
+    .logo {
+        margin-bottom: 50px;
+        img {
+            width: auto;
+            height: 40px;
+            margin-top: 70px;
+        }
+    }
+    .title {
+        font-family: "Poppins-SemiBold";
+        font-size: 28pt;
+        color: #e81c46;
+    }
+    .sub-title {
+        color: #676867;
+    }
+    .form {
+        margin-top: 30px;
+        .PIN-input {
+            padding: 11px 20px;
+            border-radius: 25px;
+            border-width: 1px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .resend-PIN {
+        margin-top: 10px;
+        text-align: center;
+        color: #676867;
+        a {
+            color: #e81c46;
+        }
+    }
+    .bottom-container {
+        position: absolute;
+        bottom: 30px;
+        display: block;
+        width: calc(100% - 80px);
+        p {
+            color: #676867;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 60px;
+            a {
+                color: #e81c46;
+            }
+        }
+        .help {
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.iti {
+    display: block !important;
+    margin-bottom: 20px;
+}
+
+.iti .dropdown-menu.country-dropdown {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-color: #c7cace;
+    margin-top: -1px;
+}
+
+.iti .iti__country-list {
+    box-shadow: none;
+    font-size: 14px;
+    margin-left: 0;
+    width: 244px;
+    max-height: 170px;
+}
+
+.iti__flag-container.open + input {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.iti .search-container input {
+    font-size: 14px;
+    border-color: #c7cace;
+    border-radius: 0;
+    padding: 5px 10px;
+}
+
+.iti .search-container input:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 479px) {
+    .iti .iti__country-list {
+        width: 88.3vw;
+    }
+}
+
+ngx-intl-tel-input input {
+    height: 44px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c7cace;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+ngx-intl-tel-input.ng-invalid.ng-touched input {
+    border: 1px solid #c0392b;
+}
+
+ngx-intl-tel-input input:hover {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+ngx-intl-tel-input input:focus {
+    outline: none !important;
+    border-color: #3498db;
+    box-shadow: 0 0 0 0 #000;
+}
+
+ngx-intl-tel-input input::-webkit-input-placeholder {
+    color: #bac2c7;
+}
+
+ngx-intl-tel-input input:-ms-input-placeholder {
+    color: #bac2c7;
+}
+
+ngx-intl-tel-input input::-ms-input-placeholder {
+    color: #bac2c7;
+}
+
+ngx-intl-tel-input input::placeholder {
+    color: #bac2c7;
+}
+
+ngx-intl-tel-input input[disabled] {
+    background-color: #e5eaf1;
+}
+@media screen and (max-width: 480px) {
+}

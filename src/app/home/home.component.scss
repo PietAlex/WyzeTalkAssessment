@@ -1,0 +1,86 @@
+.wrapper {
+    background: #e81c46;
+    background: linear-gradient(0deg, #e81c46 0%, #5f2b5f 100%);
+    display: flex;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 20px;
+    right: 3px;
+    flex-direction: column;
+    padding: 40px;
+    max-width: 375px;
+    height: 810px;
+    margin: 0 auto;
+    border-radius: 25px;
+    z-index: 1000;
+    .logo {
+        margin-bottom: 100px;
+        img {
+            width: auto;
+            height: 40px;
+            margin-top: 70px;
+        }
+    }
+    .title {
+        font-family: "Poppins-SemiBold";
+        font-size: 28pt;
+        color: #fff;
+    }
+    .sub-title {
+        color: #fff;
+    }
+    .bottom-container {
+        position: absolute;
+        bottom: 30px;
+        display: block;
+        width: calc(100% - 80px);
+        .btn {
+            width: 100%;
+            border-radius: 25px;
+            display: block;
+            padding: 11px;
+            font-weight: bold;
+            &.btn-primary {
+                background: #fff;
+                color: #e81c46;
+                border-color: #fff;
+                margin-bottom: 20px;
+            }
+            &.btn-secondary {
+                background: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+            &:focus,
+            &:active {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .btn-group {
+            width: 100%;
+            .dropdown-menu {
+                width: 100%;
+            }
+        }
+        .dropdown-toggle {
+            text-align: center;
+            color: #fff;
+            font-size: 13pt;
+            font-weight: normal;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 40px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+}

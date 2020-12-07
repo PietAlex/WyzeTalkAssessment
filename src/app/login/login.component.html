@@ -1,0 +1,32 @@
+<div class="wrapper">
+    <img src="./assets/arrow_back.png" class="back" routerLink="/home" />
+    <div class="logo">
+        <img src="./assets/logo.png">
+    </div>
+    <div class="title">Login</div>
+    <div class="sub-title">Enter your mobile number and PIN.</div>
+    <form #f="ngForm" [formGroup]="phoneForm" class="form">
+        <ngx-intl-tel-input class="country-code" [cssClass]="'custom'" [preferredCountries]="preferredCountries"
+            [enableAutoCountrySelect]="true" [enablePlaceholder]="true" [searchCountryFlag]="false"
+            [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="false"
+            [selectedCountryISO]="CountryISO.SouthAfrica" [maxLength]="15" [phoneValidation]="true"
+            [separateDialCode]="separateDialCode" [numberFormat]="PhoneNumberFormat.National" name="phone"
+            formControlName="phone">
+        </ngx-intl-tel-input>
+        <!-- <div class="PIN-container">
+            <code-input [isCodeHidden]="true" [codeLength]="4" (codeChanged)="onCodeChanged($event)"
+                (codeCompleted)="onCodeCompleted($event)">
+            </code-input>
+        </div> -->
+        <input class="PIN-input" type="password" maxlength="4" placeholder="PIN" />
+    </form>
+    <p class="resend-PIN">Don't have a PIN? <strong><a href="">Get new PIN</a></strong></p>
+
+    <div class="bottom-container">
+        <p>Haven't registered yet? <strong><a href="">Register</a></strong></p>
+        <div class="help">
+            <img src="./assets/help_outline-24px.svg" />
+            <span>Help</span>
+        </div>
+    </div>
+</div>
